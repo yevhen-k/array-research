@@ -18,3 +18,10 @@ make run
 ```
 
 For some reason, `MatSize2.data` is `nil`, but expected to be initialized memory.
+
+## Solution (thanks to the community)
+
+Do not use `#packed` by default to interact with C unless you know what are you doing.
+
+- https://odin-lang.org/news/binding-to-c/#structs
+- https://odin-lang.org/docs/overview/#packed
